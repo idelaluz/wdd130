@@ -24,3 +24,7 @@ img {
 p {
     padding: 10px;
 }
+
+main {
+    max-width: 840 px;
+}

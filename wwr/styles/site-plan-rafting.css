@@ -6,8 +6,8 @@
     --accent1-color: #232ED1;
     --accent2-color: #101D42;
 
-    --heading-font: "Lato", serif;
-    --paragraph-font: "Lato", serif;
+    --heading-font: "Helvetica", sans-serif;
+    --paragraph-font: "Helvetica", sans-serif;
 
     --nav-background-color: #898989;
     --nav-link-color: #dedede;
@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: var('Courier New', Courier, monospace);
+    font-family: var(Arial, Helvetica, sans-serif);
     max-width: 960px;
     padding: 20px;
 }

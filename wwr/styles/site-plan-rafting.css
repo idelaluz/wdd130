@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--nav-hover-background-color);
+    font-family: var(#454545);
     color: var(aqua);
 }
 

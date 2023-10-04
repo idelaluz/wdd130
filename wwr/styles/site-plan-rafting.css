@@ -1,11 +1,64 @@
-@import url("@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Lato&display=swap');
 
 :root {
-    --primary-color: #000000;
-    --secondary-color: #dfdfdf;
-    --accent1-color: #de1313;
-    --accent2-color: #200ecd;
+    --primary-color: #89d2dc;
+    --secondary-color: #6564DB;
+    --accent1-color: #232ED1;
+    --accent2-color: #101D42;
 
-    --heading-font: ""
+    --heading-font: "Lato", serif;
+    --paragraph-font: "Lato", serif;
 
+    --nav-background-color: #898989;
+    --nav-link-color: #dedede;
+    --nav-hover-link-color: #999689;
+    --nav-hover-background-color: #3267f1;
+}
+
+body {
+    font-family: var('Courier New', Courier, monospace);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--nav-hover-background-color);
+    color: var(aqua);
+}
+
+header {
+    padding: 20px;
+    background-color: var(#232ED1);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: #89d2dc;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(#dedede);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(#101D42)
+}
+
+nav a:hover {
+    color: var(#999689);
+    background-color: var(#6564DB);
 }

@@ -72,6 +72,11 @@ article img {
     opacity: 100%;
 }
 
+section img {
+    width: 170px;
+    height: auto;
+}
+
 /* box image {
     float: right;
 } */
@@ -85,6 +90,7 @@ nav {
     background-color: var(--nav-link-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: space-evenly;
 }
 
 nav a {
@@ -119,4 +125,9 @@ nav a:hover {
 
     top: 0px;
     left: 200 px;
+}
+
+.adventure {
+    display: flex;
+    justify-content: space-evenly;
 }

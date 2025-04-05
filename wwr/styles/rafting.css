@@ -1,9 +1,134 @@
 
-:root {
---heading-background-color: #f06;
---heading-text-color: #333;
---heading-font: 'Montserrat', Helvetica, sans-serif;
---padding: 1rem;
---border: 1px solid rgb(0 0 0 / 0.1);
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+
+
+:root {
+    --primary-color: #89d2dc;
+    --secondary-color: #6564DB;
+    --accent1-color: #232ED1;
+    --accent2-color: #101D42;
+
+    --heading-font: "Caveat", sans-serif;
+    --paragraph-font: "Lato", sans-serif;
+
+    --nav-background-color: #89d2dc;
+    --nav-link-color: #101D42;
+    --nav-hover-link-color: #232ED1;
+    --nav-hover-background-color: #3267f1;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--nav-background-color);
+}
+
+h1 {
+    position: absolute;
+    top: 170px;
+    left: 300px;
+    color: var(--accent2-color)
+}
+
+
+p {
+    padding: 25px;
+}
+
+/* This is the hero image in the background:  */
+div img {
+    max-width: 920px;
+    opacity: 50%;
+}
+
+/* This is the happy customer image which goes on top of the hero image:  */
+article img {
+    position: absolute;
+    top: 15px;
+    left: 580px;
+    width: 270px;
+    height: auto;
+    opacity: 100%;
+}
+
+section img {
+    width: 170px;
+    height: auto;
+}
+
+/* box image {
+    float: right;
+} */
+
+nav img {
+    max-height: 80px;
+    width: auto;
+}
+
+nav {
+    background-color: var(--nav-link-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-hover-background-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-hover-link-color)
+}
+
+nav a:hover {
+    color: var(--nav-link-color);
+    background-color: var(--nav-background-color);
+}
+
+/* Class selectors */
+
+
+.box {
+    position: absolute;
+    max-width: 500px;
+    top: 300px;
+    left: 50px;
+}
+
+.top {
+    position: relative;
+
+    top: 0px;
+    left: 200 px;
+}
+
+.adventure {
+    display: flex;
+    justify-content: space-evenly;
+}

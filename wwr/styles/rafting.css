@@ -133,7 +133,7 @@ nav a:hover {
     display: flex;
     justify-content: space-evenly;
 }
-
+/*
 figure {
     border: thin #c0c0c0 solid;
     display: flex;

@@ -77,6 +77,10 @@ section img {
     height: auto;
 }
 
+.hero {
+    position: relative;
+}
+
 /* box image {
     float: right;
 } */

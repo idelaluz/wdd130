@@ -130,13 +130,14 @@ nav a:hover {
 }
 
 .adventure {
-    display: flex;
-    justify-content: space-evenly;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
 }
 
 .image-row {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
  /*
 figure {

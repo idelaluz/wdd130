@@ -46,7 +46,7 @@ header {
 
 h1 {
     position: absolute;
-    top: 120px;
+    top: 160px;
     left: 250px;
     color: var(--accent2-color)
 }

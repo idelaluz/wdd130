@@ -140,7 +140,7 @@ nav a:hover {
 .image-row img {
     display: flex;
     justify-content: space-evenly;
-    flex-flow: row;
+    flex-flow: column;
     opacity: 100%;
 }
  /*

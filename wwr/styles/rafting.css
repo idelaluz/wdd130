@@ -139,7 +139,7 @@ nav a:hover {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    opacity: 1;
+    opacity: 100%;
 }
  /*
 figure {

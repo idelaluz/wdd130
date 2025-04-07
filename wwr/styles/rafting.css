@@ -62,8 +62,10 @@ div img {
     opacity: 50%;
 }
 
-.hero {
+.hero > img {
     position: relative;
+    max-width: 920px;
+    opacity: 50%;
 } 
 
 /* This is the happy customer image which goes on top of the hero image:  */

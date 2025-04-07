@@ -135,11 +135,11 @@ nav a:hover {
     /* justify-content: space-evenly; */
 }
 
-.image-row {
+.image-row img {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    opacity: 100%;
+    opacity: 1;
 }
  /*
 figure {

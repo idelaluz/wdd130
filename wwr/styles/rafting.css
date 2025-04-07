@@ -46,7 +46,7 @@ header {
 
 h1 {
     position: absolute;
-    top: 150px;
+    top: 200px;
     left: 250px;
     color: var(--accent2-color)
 }
@@ -138,9 +138,9 @@ nav a:hover {
 }
 
 .image-row img {
-    display: flex;
+    display: inline-block;
     justify-content: space-evenly;
-    flex-flow: column;
+    flex-flow: row;
     opacity: 100%;
 }
  /*

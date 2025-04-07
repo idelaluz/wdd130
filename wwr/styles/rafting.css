@@ -57,13 +57,13 @@ p {
 }
 
 /* This is the hero image in the background:  */
-div img {
+/* div img {
     max-width: 920px;
     opacity: 50%;
-}
+} */
 
 .hero > img {
-    position: relative;
+    /* position: relative; */
     max-width: 920px;
     opacity: 50%;
 } 

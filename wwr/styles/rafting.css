@@ -42,7 +42,8 @@ h6 {
 header {
     padding: 20px;
     background-color: var(--nav-background-color);
-    display: grid
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 h1 {

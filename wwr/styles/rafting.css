@@ -9,9 +9,9 @@
 
 
 :root {
-    --primary-color: #89d2dc;
-    --secondary-color: #6564DB;
-    --accent1-color: #232ED1;
+    --primary-color: #f2ff00;
+    --secondary-color: #0400de;
+    --accent1-color: #edf514;
     --accent2-color: #101D42;
 
     --heading-font: "Caveat", sans-serif;
@@ -19,8 +19,8 @@
 
     --nav-background-color: #89d2dc;
     --nav-link-color: #101D42;
-    --nav-hover-link-color: #232ED1;
-    --nav-hover-background-color: #3267f1;
+    --nav-hover-link-color: #ffff00;
+    --nav-hover-background-color: #fcfc06;
 }
 
 body {
@@ -43,7 +43,7 @@ header {
     padding: 20px;
     background-color: var(--nav-background-color);
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
 }
 
 h1 {
@@ -67,7 +67,7 @@ p {
 .hero > img {
     /* position: relative; */
     max-width: 920px;
-    opacity: 50%;
+    opacity: 25%;
 } 
 
 /* This is the happy customer image which goes on top of the hero image:  */
@@ -140,11 +140,18 @@ nav a:hover {
 }
 
 .image-row img {
-    display: grid;
+    display: flexbox;
     justify-content: center;
+    gap: 0;
     max-width: 100%;
     opacity: 100%;
 }
+
+.sociallinks {
+    display: flexbox;
+    justify-content: right
+}
+
  /*
 figure {
     border: thin #c0c0c0 solid;

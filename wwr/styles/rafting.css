@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -6,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 :root {
     --primary-color: #f2ff00;
@@ -53,24 +51,15 @@ h1 {
     color: var(--accent2-color)
 }
 
-
 p {
     padding: 25px;
 }
 
-/* This is the hero image in the background:  */
-/* div img {
-    max-width: 920px;
-    opacity: 50%;
-} */
-
 .hero > img {
-    /* position: relative; */
     max-width: 920px;
     opacity: 25%;
-} 
+}
 
-/* This is the happy customer image which goes on top of the hero image:  */
 article img {
     position: absolute;
     top: 15px;
@@ -87,7 +76,7 @@ section img {
 
 box image {
     float: right;
-} 
+}
 
 nav img {
     max-height: 80px;
@@ -118,9 +107,6 @@ nav a:hover {
     background-color: var(--nav-background-color);
 }
 
-/* Class selectors */
-
-
 .box {
     position: absolute;
     max-width: 500px;
@@ -135,20 +121,8 @@ nav a:hover {
 
 .adventure {
     padding: 0px;
-    /* display: flex; */
-    /* justify-content: space-evenly; */
 }
 
-/* .image-row img {
-    display: grid;
-    grid-template-columns: auto;
-/*    justify-content:space-evenly; */
-    gap: 0; 
-    max-width: 100%;
-    opacity: 100%;
-} */
-
-/* NEW CODE */
 .image-row {
     display: flex;
     justify-content: space-between;
@@ -178,31 +152,7 @@ nav a:hover {
     color: #333;
 }
 
-
 .sociallinks {
     display: flex;
     justify-content: right
 }
-
- /*
-figure {
-    border: thin #c0c0c0 solid;
-    display: flex;
-    flex-flow: column;
-    padding: 5px;
-    max-width: 220px;
-    margin: auto;
-  }
-
-img {
-    max-width: 220px;
-    max-height: 150px;
-  }
-
-figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
-  } */

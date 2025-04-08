@@ -140,15 +140,16 @@ nav a:hover {
 }
 
 .image-row img {
-    display: flexbox;
-    justify-content: center;
-    gap: 0;
+    display: grid;
+    grid-template-columns: auto;
+/*    justify-content:space-evenly; */
+    gap: 0; 
     max-width: 100%;
     opacity: 100%;
 }
 
 .sociallinks {
-    display: flexbox;
+    display: flex;
     justify-content: right
 }
 

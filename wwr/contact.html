@@ -48,6 +48,7 @@
         </section>
         -->    
         <section class="adventure">
+            <br>
             <h2>Meet Our Team</h2>
             <div class="image-row">
                 <figure>
@@ -68,6 +69,43 @@
                 </figure>
             </div>
         </section>
+        <br>
+        <h2>Write Us</h2>
+        <form>
+            <fieldset>
+                <legend>Contact Info</legend>
+                <!--Form Elements will go here-->
+                <br>
+                <label for="name">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Please enter your name"><br><br
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail" required placeholder="Please enter your email"><br><br
+            </fieldset>
+            <fieldset>
+                <legend>Message</legend>
+                <!--Form Elements will go here-->
+                <br>
+                <label>What is the purpose of your message?</label><br>
+                <input type="radio" id="general" name="messagetype" value="General Inquiry">
+                <label for="general">General Inquiry</label><br>
+
+                <input type="radio" id="reservation" name="messagetype" value="Reservation Question">
+                <label for="reservation">Reservation Question</label><br>
+
+                <input type="radio" id="website" name="messagetype" value="Website Suggestion">
+                <label for="website">Website Suggestion</label><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required placeholder="Please enter your message"></textarea><br><br>
+                </select>
+                <label for ="newsletter">Please subscribe me to the monthly newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter"<br><br>
+                <br>
+            </fieldset>
+            <button type="submit">Submit My Request</button>
+        
+        </form>
+        <br>
     </main>
     <footer>
         <p>&copy;2025 White Water Rafting Company 🌎 Israel De La Luz</p>

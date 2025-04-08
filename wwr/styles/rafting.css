@@ -146,10 +146,13 @@ nav a:hover {
 }
 
 .image-row figcaption {
-    margin-top: 8px;
+    background-color: #222;
+    color: #fff;
+    padding: 6px;
     text-align: center;
+    margin-top: 0px;
     font-style: italic;
-    color: #333;
+    width: 170px;
 }
 
 .sociallinks {

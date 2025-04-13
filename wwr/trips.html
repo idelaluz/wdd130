@@ -1,88 +1,119 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/rafting.css">
-    <title> White Water Rafting | Trips</title>
-    <meta name="description" content="White Water Rafting Trips">
-    <meta name="author" content="Israel De La Luz">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <title>White Water Rafting | Trips</title>
+  <meta name="description" content="White Water Rafting Trips">
+  <meta name="author" content="Israel De La Luz">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <img src="images/logo.png" alt="Rafting Site Logo">
-            <a href="index.html">Index</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="...">
-            <h1>White Water Rafting Trips</h1>
-            <article class="box">
-                <img src="images/happy.jpg" alt="happy-paddlers">
-                <p> Trip 1. <br>
-                    Trip 2. <br> 
-                    Trip 3. </p>
-            </article>
-        </div>
-        <section>
-            <br>
-            <h2>Got Any Questions? Contact Us!</h2>
-            <p>Founded in 2020, White Water Rafting Company began with a single raft and a passion for
-                adventure. What started as weekend trips for friends has grown into one of the region's
-                most trusted rafting experiences. With over five years of navigating wild rivers and
-                sharing nature's thrill, the White Water Rafting Company remains committed to safety, 
-                excitement, and unforgettable memories on the water. Come and join us in the adventure! </p>
-        </section>
-        <section class="adventure">
-            <h2>Adventure Awaits You!</h2>
-            <div class="image-row">
-                <figure>
-                    <img src="images/raft01.jpg" alt="raft 01">
-                    <figcaption>Scenic ride</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/raft02.jpg" alt="raft 02">
-                    <figcaption>Having a splash</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/raft03.jpg" alt="raft 03">
-                    <figcaption>Adrenaline rush</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/raft04.jpg" alt="raft 04">
-                    <figcaption>All smiles</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/raft05.jpg" alt="raft 05">
-                    <figcaption>Happy paddling</figcaption>
-                </figure>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy;2025 White Water Rafting Company 🌎 Israel De La Luz</p>
-        <nav class="sociallinks">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram">
-            </a>
-        </nav>
-    </footer>
-</body>
+  <header>
+    <nav>
+      <img src="images/logo.png" alt="Rafting Site Logo">
+      <a href="index.html">Index</a>
+      <a href="about.html">About</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
+  <main>
+    <!-- Hero Section with Title and Table -->
+    <div class="hero trips-hero">
+      <img src="images/hero.jpg" alt="hero image">
+      <div class="trips-hero-content">
+        <!-- Title placed above the table -->
+        <h1>White Water Rafting Trips</h1>
+        <table class="trip-table">
+          <colgroup>
+            <!-- Set Trip Name column to 30% width -->
+            <col class="trip-name-col" style="width: 30%;">
+            <col>
+            <col>
+            <col>
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Trip Name</th>
+              <th>Difficulty</th>
+              <th>Duration</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wild Rapids Adventure</td>
+              <td>Class IV-V</td>
+              <td>4 hrs</td>
+              <td>$120</td>
+            </tr>
+            <tr>
+              <td>Scenic Splash</td>
+              <td>Class II-III</td>
+              <td>3 hrs</td>
+              <td>$80</td>
+            </tr>
+            <tr>
+              <td>Sunset Float</td>
+              <td>Class I-II</td>
+              <td>2 hrs</td>
+              <td>$60</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Trip Details Section (two columns per trip) -->
+    <div class="trip-details-wrapper">
+      <!-- Trip 1 -->
+      <div class="trip-details">
+        <div class="trip-text">
+          <h3>Wild Rapids Adventure</h3>
+          <p>Hold on tight! This high-octane ride through churning rapids and heart-racing drops is perfect for adrenaline junkies. Get soaked, scream loud, and laugh even louder—this is whitewater rafting at its wildest.</p>
+        </div>
+        <div class="trip-image">
+          <img src="images/photo01.jpg" alt="Wild Rapids Adventure">
+        </div>
+      </div>
+      <!-- Trip 2 -->
+      <div class="trip-details">
+        <div class="trip-text">
+          <h3>Scenic Splash</h3>
+          <p>Perfect for first-timers or families, this mellow but exciting trip blends just the right amount of splash with plenty of breathtaking views. Float, paddle, and soak up the sunshine as our guides steer you through nature’s beauty.</p>
+        </div>
+        <div class="trip-image">
+          <img src="images/photo02.jpg" alt="Scenic Splash">
+        </div>
+      </div>
+      <!-- Trip 3 -->
+      <div class="trip-details">
+        <div class="trip-text">
+          <h3>Sunset Float</h3>
+          <p>Slow it down and soak it in. This relaxed evening ride offers gentle waters, golden skies, and a chance to toast marshmallows riverside. It’s the most peaceful adventure you’ll never forget.</p>
+        </div>
+        <div class="trip-image">
+          <img src="images/photo03.jpg" alt="Sunset Float">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;2025 White Water Rafting Company 🌎 Israel De La Luz</p>
+    <nav class="sociallinks">
+      <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+    </nav>
+  </footer>
+</body>
 </html>

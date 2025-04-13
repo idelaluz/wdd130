@@ -160,3 +160,120 @@ nav a:hover {
     display: flex;
     justify-content: right
 }
+
+/* ----------------------- */
+/* Trips Hero Section      */
+/* ----------------------- */
+.trips-hero {
+    position: relative;
+    text-align: center;
+    color: var(--accent2-color);
+    margin-bottom: 2rem;
+  }
+  
+  .trips-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.25;
+  }
+  
+  .trips-hero-content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .trips-hero-content h1 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Trips Table inside Hero */
+  .trips-hero .trip-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+  }
+  
+  .trips-hero .trip-table th,
+  .trips-hero .trip-table td {
+    border: 1px solid #999;
+    padding: 10px;
+  }
+  
+  .trips-hero .trip-table th {
+    background-color: var(--accent1-color);
+    color: #000;
+  }
+  
+  /* ----------------------- */
+  /* Trip Details Section    */
+  /* ----------------------- */
+  .trip-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 2rem auto;
+    max-width: 900px;
+    width: 90%;
+  }
+  
+  .trip-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  
+  .trip-text {
+    flex: 1 1 50%;
+    text-align: left;
+  }
+  
+  .trip-text h3 {
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  
+  .trip-image {
+    flex: 1 1 50%;
+    text-align: center;
+  }
+  
+  .trip-image img {
+    width: 300px; /* 50% of the original 600px width */
+    height: auto;  /* maintain aspect ratio */
+    object-fit: cover;
+  }
+  
+  /* ----------------------- */
+  /* Responsive Adjustments  */
+  /* ----------------------- */
+  @media (max-width: 768px) {
+    .trips-hero-content {
+      top: 5%;
+    }
+    .trip-details {
+      flex-direction: column;
+      align-items: center;
+    }
+    .trip-text, .trip-image {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+    .trip-image img {
+      width: 80%;
+    }
+  }
+  

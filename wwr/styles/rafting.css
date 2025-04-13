@@ -167,8 +167,7 @@ nav a:hover {
 .trips-hero {
     position: relative;
     text-align: center;
-    color: var(--accent2-color);
-    margin-bottom: 2rem;
+    margin-bottom: 0;  /* No extra space at the bottom */
   }
   
   .trips-hero img {
@@ -178,38 +177,51 @@ nav a:hover {
     opacity: 0.25;
   }
   
-  .trips-hero-content {
+  /* Overlay container that holds the title and table box */
+  .hero-overlay {
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
     max-width: 900px;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  /* Hero title: displayed directly on the hero image (no background) */
+  .hero-title {
+    margin: 0;
+    font-size: 2.0rem; /* Adjust as needed */
+    color: var(--accent2-color);
+    position: static; /* Normal document flow */
+    padding-bottom: 1rem; /* Space between title and white box */
+  }
+  
+  /* White box containing only the table, placed immediately below the title */
+  .trip-table-box {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 0;  /* No extra margin to ensure it sits directly below the title */
   }
   
-  .trips-hero-content h1 {
-    margin-bottom: 1rem;
-  }
-  
-  /* Trips Table inside Hero */
-  .trips-hero .trip-table {
+  /* Trips Table inside the white box */
+  .trip-table {
     width: 100%;
     margin: 0 auto;
     border-collapse: collapse;
     font-size: 1rem;
   }
   
-  .trips-hero .trip-table th,
-  .trips-hero .trip-table td {
+  .trip-table th,
+  .trip-table td {
     border: 1px solid #999;
     padding: 10px;
   }
   
-  .trips-hero .trip-table th {
+  .trip-table th {
     background-color: var(--accent1-color);
     color: #000;
   }
@@ -228,9 +240,8 @@ nav a:hover {
   
   .trip-details {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
@@ -242,7 +253,7 @@ nav a:hover {
   }
   
   .trip-text h3 {
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     color: var(--secondary-color);
   }
   
@@ -252,8 +263,8 @@ nav a:hover {
   }
   
   .trip-image img {
-    width: 300px; /* 50% of the original 600px width */
-    height: auto;  /* maintain aspect ratio */
+    width: 300px; /* 50% of original 600px width */
+    height: auto;
     object-fit: cover;
   }
   
@@ -261,14 +272,15 @@ nav a:hover {
   /* Responsive Adjustments  */
   /* ----------------------- */
   @media (max-width: 768px) {
-    .trips-hero-content {
-      top: 5%;
+    .hero-overlay {
+      top: 10%;
     }
     .trip-details {
       flex-direction: column;
       align-items: center;
     }
-    .trip-text, .trip-image {
+    .trip-text,
+    .trip-image {
       flex: 1 1 100%;
       text-align: center;
     }
